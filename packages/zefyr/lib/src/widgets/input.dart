@@ -180,4 +180,9 @@ class InputConnectionController implements TextInputClient {
       _sentRemoteValues.clear();
     }
   }
+
+  @override
+  // implement currentTextEditingValue
+  TextEditingValue get currentTextEditingValue =>
+      _lastKnownRemoteTextEditingValue;
 }
