@@ -217,7 +217,7 @@ class _NotusMarkdownEncoder extends Converter<Delta, String> {
     if (close) {
       buffer.write('](' + string.value['source'] + ']');
     } else {
-      buffer.write('![Image');
+      buffer.write('![image');
     }
   }
 }
