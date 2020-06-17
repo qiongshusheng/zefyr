@@ -215,7 +215,7 @@ class _NotusMarkdownEncoder extends Converter<Delta, String> {
   void _writeEmbedTag(StringBuffer buffer, NotusAttribute<Map<String, dynamic>> string,
       {bool close = false}) {
     if (close) {
-      buffer.write('](' + string.value['source'] + ']');
+      buffer.write('](' + string.value['source'] + ')');
     } else {
       buffer.write('![image');
     }
